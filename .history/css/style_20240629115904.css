@@ -12,7 +12,7 @@ ul{
 a{
     text-decoration: none;
 }
-/* nav sec */
+
 .nav_sec{
     display: flex;
     align-items: center;
@@ -43,8 +43,6 @@ a{
 .menu_bar ul li a:hover{
     color:#F25836;
 }
-
-/* hero sec */
 .hero_section{
     display:flex;
     align-self: center;
@@ -96,7 +94,6 @@ a{
    box-shadow: 5px 5px #F25836;;
 } 
 
-/* skills sec */
 .skills_sec{
     background-color: #F0F0F0;
     padding:50px;
@@ -110,12 +107,15 @@ a{
     font-weight: bold;
 }
 
-
-.skills_container{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    padding:30px 0px 30px 0px;
-}
+/* .skills_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+} */
+.
 .skill{
     background-color: #fff;
     padding:20px;
@@ -133,7 +133,7 @@ a{
     font-size:15px;
     padding:10px;
 }
-/* project sec */
+
 .projects_sec{
     background-color: #F0F0F0;
     padding:50px;
@@ -143,11 +143,14 @@ a{
 }
 
 .project_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding:30px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
     gap:20px;
 }
+
 .project{
     background-color: #fff;
     padding:20px;
@@ -172,9 +175,6 @@ a{
     font-size:18px;
     cursor:pointer;
 }
-
-/* contact sec */
-
 .contact_sec{
     margin: 80px 80px;
     padding: 50px;
@@ -186,13 +186,13 @@ a{
     padding-top: 10px;
     font-size: 15px;
 }
-
 .contact_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .contact_form{
-    margin-top:20px;
+    margin-bottom:100px;
 }
 form{
     display:flex;
@@ -225,8 +225,6 @@ textarea{
     background-color:#333333;
     color:#fff;
 }
-
-/* footer sec */
 .footer_sec{
     background-color: #333333;
     padding: 30px;
