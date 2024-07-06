@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arif Shahriyar Nader's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css">
 </head>
 <body>
     <!-- Header Section Start -->
@@ -30,8 +26,9 @@
     <!-- Header Section End -->
 
      <!-- Hero Section Start -->
-     <section class="flex self-center justify-between flex-col p-24 md:flex-row hero_section">
-        <div class="py-14 px-20 hero_text">
+     <section class="flex self-center justify-between flex-col
+      p-8 md:p-24 md:flex-row hero_section">
+        <div class="py-2 px-2 md:py-10  md:px-20 hero_text">
             <h2 class="text-[#333333] pt-14 text-4xl font-bold">Hi, I'm Arif Shahriyar Nader</h2>
             <p class="text-lg pt-5">A Passionate Developer and Tech Enthusiast from Bangladesh,<br>
             I always love to learn new technologies and I'm also a quick learner.</p>
@@ -51,7 +48,7 @@
      <!-- Hero Section End -->
       <!-- Skills sec Start -->
      <section class="bg-[#F0F0F0] border-solid border-2 border-custom:[#F0F0F0]
-     p-12 my-20 mx-20 rounded-lg skills_sec">
+     p-6 md:p-12 my-20 mx-20 rounded-lg skills_sec">
         <h1 class="text-[#000000] text-3xl font-bold">Skills:</h1>
         <div class="grid grid-cols-1 py-7 gap-4 md:grid-cols-3 md:gap:0 skills_container">
             <div class="bg-[#fff] p-5 text-center border-solid
@@ -77,11 +74,13 @@
      </section>
      <!-- Skills Sec End -->
       <!-- Project Sec Start -->
-      <section class="bg-[#F0F0F0] p-12 my-20 mx-20 border-solid border-2
+      <section class="bg-[#F0F0F0] p-6 md:p-12 my-5 md:my-20 mx-5 md:mx-20
+       border-solid border-2
       border-custom-[#F0F0F0] rounded-lg projects_sec">
         <h1 class="text-[#000000] text-3xl font-bold">My Projects:</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 pt-7 pb-7 gap-5 project_container">
-            <div class="bg-[#fff] p-5 text-center border-solid
+        <div class="grid grid-cols-1 md:grid-cols-3 py-3 md:py-7
+         gap-2 md:gap-5 project_container">
+            <div class="bg-[#fff] p-2 md:p-5 text-center border-solid
              border-1 border-custom-[#ccc] rounded-lg project">
                 <h3 class="p-4 text-[#F25836] font-bold">Booking Reservation App</h3>
                 <p class="p-2.5 text-sm">This project was final year project at my University.<br>
@@ -167,8 +166,10 @@
         </div>
        </section>
        <!-- Footer Sec -->
+
        <footer class="footer_sec">
-            <div class="bg-[#333333] p-7 text-center text-[#fff] text-lg footer_text">
+            <div class="bg-[#333333] p-33 md:p-7 text-center text-[#fff]
+             text-lg footer_text">
                 <p>&copy; Arif Shahriyar Nader All rights reserved 2024</p>
             </div>
        </footer>
