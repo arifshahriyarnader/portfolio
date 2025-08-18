@@ -1,6 +1,4 @@
-export type Theme = "light" | "dark";
-
 export type ThemeContextType = {
-  theme: Theme;
+  theme: "light" | "dark";
   toggleTheme: () => void;
 };
