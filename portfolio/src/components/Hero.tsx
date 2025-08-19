@@ -8,7 +8,7 @@ export default function Hero() {
   const { theme } = useContext(ThemeContext);
   return (
     <section
-      id="home"
+      id="hero"
       className="min-h-screen flex flex-col justify-center items-center text-center px-6"
     >
       <h4

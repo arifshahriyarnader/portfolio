@@ -9,7 +9,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "#" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
@@ -43,7 +43,7 @@ const Header = () => {
     ${
       theme === "light"
         ? "bg-gray-200 hover:bg-gray-300"
-        : "bg-[#208177] hover:bg-[#18685f]"
+        : "bg-[#050C1A] hover:bg-[#1D283A]"
     }`}
         >
           {theme === "light" ? (
