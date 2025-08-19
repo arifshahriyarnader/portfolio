@@ -1,10 +1,10 @@
 "use client";
 import { useState, useContext } from "react";
-import ThemeContext from "@/context/ThemeContext";
+import ThemeContext from "../context/ThemeContext";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import Link from "next/link";
 
-const Navbar = () => {
+const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,7 +43,7 @@ const Navbar = () => {
     ${
       theme === "light"
         ? "bg-gray-200 hover:bg-gray-300"
-        : "bg-[#20817] hover:bg-[#18685f]"
+        : "bg-[#208177] hover:bg-[#18685f]"
     }`}
         >
           {theme === "light" ? (
@@ -80,4 +80,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

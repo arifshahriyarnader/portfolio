@@ -7,16 +7,28 @@ type ThemeProviderProps = {
 };
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
+  
+
+
+useEffect(() => {
+  const storedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
+  if (storedTheme) setTheme(storedTheme);
+}, []);
 
   useEffect(() => {
-    document.body.style.backgroundColor = theme === "light" ? "#fff" : "#222";
-    document.body.style.color = theme === "light" ? "#000" : "#fff";
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
-  const toggleTheme = () => {
+   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
+  
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
