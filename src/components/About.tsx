@@ -37,7 +37,7 @@ export default function About() {
         ${
           theme === "light"
             ? "bg-[#F8FAFC] text-gray-900"
-            : "bg-gray-950 text-white"
+            : "bg-[#101929] text-white"
         }
       `}
     >

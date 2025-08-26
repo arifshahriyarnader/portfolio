@@ -9,7 +9,7 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
-    document.body.style.backgroundColor = theme === "light" ? "#fff" : "#222";
+    document.body.style.backgroundColor = theme === "light" ? "#fff" : "#020817";
     document.body.style.color = theme === "light" ? "#000" : "#fff";
   }, [theme]);
 
