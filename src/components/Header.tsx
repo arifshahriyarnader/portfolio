@@ -53,7 +53,9 @@ const Header = () => {
           )}
         </button>
         <button
-          className="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-[#20817] cursor-pointer"
+          className={`md:hidden p-2 rounded cursor-pointer ${
+            theme === "light" ? "hover:bg-gray-200" : "hover:bg-[#1D283A]"
+          }`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
