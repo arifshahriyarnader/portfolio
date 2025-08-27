@@ -15,6 +15,7 @@ const skills = [
       "Tailwind CSS",
       "React",
       "Next",
+      "ShadCN",
       "Node",
       "Express",
     ],
