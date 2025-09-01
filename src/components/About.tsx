@@ -27,7 +27,7 @@ const services = [
   },
 ];
 
-export default function About() {
+const About = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -163,4 +163,6 @@ export default function About() {
       </div>
     </section>
   );
-}
+};
+
+export default About;

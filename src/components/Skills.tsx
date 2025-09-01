@@ -30,7 +30,7 @@ const skills = [
   },
 ];
 
-export default function Skills() {
+const Skills = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -85,4 +85,6 @@ export default function Skills() {
       </div>
     </section>
   );
-}
+};
+
+export default Skills;

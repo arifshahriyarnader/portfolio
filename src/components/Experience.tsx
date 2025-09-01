@@ -17,7 +17,7 @@ const experiences = [
   },
 ];
 
-export default function Experience() {
+const Experience = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -62,4 +62,6 @@ export default function Experience() {
       </div>
     </section>
   );
-}
+};
+
+export default Experience;

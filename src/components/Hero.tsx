@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useContext } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
 
-export default function Hero() {
+const Hero =() => {
   const { theme } = useContext(ThemeContext);
   return (
     <section
@@ -19,7 +19,7 @@ export default function Hero() {
         Hello, I&apos;m
       </h4>
 
-      <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+      <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
         Arif Shahriyar Nader
       </h1>
 
@@ -105,3 +105,5 @@ export default function Hero() {
     </section>
   );
 }
+
+export default Hero;
