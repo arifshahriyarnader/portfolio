@@ -47,9 +47,9 @@ const Header = () => {
     }`}
         >
           {theme === "light" ? (
-            <Sun size={20} className="text-black" />
+            <Moon size={20} className="text-black" />
           ) : (
-            <Moon size={20} className="text-white" />
+            <Sun size={20} className="text-white" />
           )}
         </button>
         <button
