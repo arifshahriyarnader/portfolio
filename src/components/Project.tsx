@@ -52,10 +52,10 @@ const Project = () => {
 
         <div className="flex justify-center mt-12">
           <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/arifshahriyarnader?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border border-purple-500 rounded-full text-[#000] font-semibold transition-all duration-300 hover:bg-purple-500 hover:text-white"
+            className={`px-6 py-3 border border-purple-500 hover:bg-purple-500 hover:text-white rounded-full  font-semibold transition-all duration-300 ${`theme === "light" ? "text-[#000]"  : "text-[#fff]"`}`}
           >
             View All Projects on GitHub
           </a>

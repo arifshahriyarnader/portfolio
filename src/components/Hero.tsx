@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useContext } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
 
-const Hero =() => {
+const Hero = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <section
@@ -97,13 +97,22 @@ const Hero =() => {
           Get In Touch
         </Link>
       </div>
-
-      <FaArrowDown
-        className={`w-6 h-6 animate-bounce cursor-pointer 
-          ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}
-      />
+      <button
+        onClick={() => {
+          document
+            .getElementById("about")
+            ?.scrollIntoView({ behavior: "smooth" });
+        }}
+        className={`
+    rounded-full cursor-pointer transition-all duration-300
+    ${theme === "light" ? "text-gray-600" : "text-gray-300"}
+    hover:bg-purple-600 hover:text-white hover:p-3
+  `}
+      >
+        <FaArrowDown className="w-6 h-6 animate-bounce" />
+      </button>
     </section>
   );
-}
+};
 
 export default Hero;

@@ -182,11 +182,11 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Full name"
-                    className={`w-full p-3 rounded-lg border ${
-                      theme === "light"
-                        ? "bg-[#FFFFFF] text-[#64749A]"
-                        : "bg-[#020817] text-[#fff]"
-                    }`}
+                    className={`w-full p-3 rounded-lg border placeholder:text-[#000] ${
+    theme === "light"
+      ? "bg-[#fff] text-[#64749A] placeholder:text-[#64749A]"
+      : "bg-[#020817] text-[#ffffff] placeholder:text-[#fff]"
+  }`}
                   />
                 </div>
                 <div>
@@ -198,11 +198,11 @@ export default function Contact() {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="your.email@example.com"
+                    placeholder="your.email@gmail.com"
                     className={`w-full p-3 rounded-lg border ${
                       theme === "light"
-                        ? "bg-[#FFFFFF] text-[#64749A]"
-                        : "bg-[#020817] text-[#fff]"
+                        ? "bg-[#FFFFFF] text-[#64749A] placeholder:text-[#64749A]"
+                        : "bg-[#020817] text-[#fff] placeholder:text-[#fff]"
                     }`}
                   />
                 </div>
@@ -218,8 +218,8 @@ export default function Contact() {
                   placeholder="What's this about?"
                   className={`w-full p-3 rounded-lg border ${
                     theme === "light"
-                      ? "bg-[#FFFFFF] text-[#64749A]"
-                      : "bg-[#020817] text-[#fff]"
+                      ? "bg-[#FFFFFF] text-[#64749A] placeholder:text-[#64749A]"
+                      : "bg-[#020817] text-[#fff] placeholder:text-[#fff]"
                   }`}
                 />
               </div>
@@ -232,10 +232,10 @@ export default function Contact() {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className={`w-full p-3 rounded-lg border ${
+                    className={`w-full p-3 rounded-lg border ${
                     theme === "light"
-                      ? "bg-[#fff] text-[#64749A]"
-                      : "bg-[#020817] text-[#ffffff]"
+                      ? "bg-[#fff] text-[#64749A] placeholder:text-[#64749A]"
+                      : "bg-[#020817] text-[#ffffff] placeholder:text-[#fff]"
                   }`}
                 ></textarea>
               </div>
