@@ -43,6 +43,8 @@ const projects = [
       "MongoDB",
       "Groq AI",
       "Tailwind CSS",
+      "Docker",
+      "CI/CD Pipeline",
     ],
     image: "/assets/images/task-manager.png",
     githubLink: "https://github.com/arifshahriyarnader/task-manager",

@@ -95,7 +95,7 @@ const About = () => {
               ${theme === "light" ? "text-gray-600" : "text-gray-400"}`}
           >
             Alongside development, I&apos;m enthusiastic about DevOps
-            practices, focusing on automation, CI/CD pipelines, and cloud deployment. This
+            practices, focusing on automation, CI/CD pipeline, and cloud deployment. This
             helps me bridge the gap between development and operations, ensuring
             faster, more reliable project delivery.
           </p>
